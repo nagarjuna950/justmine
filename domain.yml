@@ -1,0 +1,506 @@
+actions:
+- __main__.ApiAction
+- action_mood_identifier
+- action_mood_identifier6
+- action_mood_identifier7
+- action_thankyou1
+- actions.MoodIdentifier
+- utter_ask_opt
+- utter_ask_opt1
+- utter_ask_feedback3
+- utter_ask_feedback5
+- utter_ask_feedback4
+- utter_goodbye
+- utter_greet
+- utter_q1
+- utter_q1_five_a
+- utter_q1_five_apo1
+- utter_q1_four_a
+- utter_q1_four_apo1
+- utter_q1_four_apo2
+- utter_q1_four_b
+- utter_q1_one_a
+- utter_q1_one_apo1
+- utter_q1_one_apo2
+- utter_q1_three_a
+- utter_q1_three_apo1
+- utter_q1_three_apo2
+- utter_q1_three_b
+- utter_q1_two_a
+- utter_q1_two_apo1
+- utter_q1_two_apo2
+- utter_q1_two_b
+- utter_q2
+- utter_q2_five_a
+- utter_q1_five_b
+- utter_q2_five_apo1
+- utter_q2_five_apo2
+- utter_q2_four_a
+- utter_q2_four_apo1
+- utter_q2_four_apo2
+- utter_q2_one_a
+- utter_q2_one_apo1
+- utter_q2_one_apo2
+- utter_q2_three_apo1
+- utter_q2_two_a
+- utter_q2_two_apo1
+- utter_q2_two_apo2
+- utter_q6
+- utter_q7
+- utter_q2_three_a
+- utter_q2_three_apo2
+- utter_slots_values
+- utter_slots_values3
+- utter_slots_values5
+- utter_slots_values4
+- utter_submit
+- utter_thankyou
+- utter_thankyou1
+entities:
+- feedback
+- feedback3
+- feedback5
+- feedback4
+- opt
+- opt1
+- opt2
+
+forms:
+- feedback_form
+- feedback_form3
+- feedback_form5
+- feedback_form4
+
+intents:
+- user_options
+- goodbye
+- greet
+- mood_happy
+- mood_unhappy
+- welcome
+- inform
+- options_q1
+- options_q2
+- mood_1
+- mood_2
+- mood_3
+- mood_4
+- mood_5
+
+slots:
+  opt:
+    auto_fill: false
+    type: unfeaturized
+  opt1:
+    auto_fill: false
+    type: unfeaturized
+  opt2:
+    auto_fill: false
+    type: unfeaturized
+  feedback3:
+    auto_fill: false
+    type: unfeaturized
+  feedback5:
+    auto_fill: false
+    type: unfeaturized
+  feedback4:
+    auto_fill: false
+    type: unfeaturized
+  requested_slot:
+    type: unfeaturized
+  
+      
+templates:
+
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hey!This is Dora here.CK's new Smart Assistant.
+  utter_greet2:
+  - text: Don't worry,I will keep our chat confidential.Let's begin.
+  utter_q1:
+  - buttons:
+    - payload: FIVE
+      title: FIVE
+    - payload: FOUR
+      title: FOUR
+    - payload: THREE
+      title: THREE
+    - payload: TWO
+      title: TWO
+    - payload: ONE
+      title: ONE
+    text: Did you enjoy your shampoo from Just Mine!?
+  utter_q1_five_a:
+  - buttons:
+    - payload: Fragrance
+      title: Fragrance
+    - payload: Colour
+      title: Colour
+    - payload: 'Effect of Ingredients '
+      title: 'Effect of Ingredients '
+    - payload: Cleansing properties
+      title: Cleansing properties
+    - payload: Conditioning
+      title: Conditioning
+    - payload: ' Foaming Quality '
+      title: ' Foaming Quality '
+    - payload: Moisturizing effects
+      title: Moisturizing effects
+    - payload: Anti-Frizziness
+      title: Anti-Frizziness
+    - payload: Packaging
+      title: Packaging
+    - payload: Others
+      title: Others
+    text: While we collect the Oscars for the best shampoo, we would like to know what you liked about Just Mine! that won you over?
+  utter_q1_five_b:
+  - buttons:
+    - payload: Fragrance
+      title: Fragrance
+    - payload: Colour
+      title: Colour
+    - payload: 'Effect of Ingredients '
+      title: 'Effect of Ingredients '
+    - payload: Cleansing properties
+      title: Cleansing properties
+    - payload: Conditioning
+      title: Conditioning
+    - payload: ' Foaming Quality '
+      title: ' Foaming Quality '
+    - payload: Moisturizing effects
+      title: Moisturizing effects
+    - payload: Anti-Frizziness
+      title: Anti-Frizziness
+    - payload: Packaging
+      title: Packaging
+    - payload: Extra Input
+      title: Extra Input
+    text: Perfection is a Journey and not a destination. We would like to know if there is anything that you want us to improve on in the shampoo?(You may select multiple options, if needed)
+  utter_q1_five_apo1:
+  - text: We are delighted to know that we have been perfect for you!
+  utter_q1_four_a:
+  - buttons:
+    - payload: Fragrance
+      title: Fragrance
+    - payload: Colour
+      title: Colour
+    - payload: 'Effect of Ingredients '
+      title: 'Effect of Ingredients '
+    - payload: Cleansing properties
+      title: Cleansing properties
+    - payload: Conditioning
+      title: Conditioning
+    - payload: ' Foaming Quality '
+      title: ' Foaming Quality '
+    - payload: Moisturizing effects
+      title: Moisturizing effects
+    - payload: Anti-Frizziness
+      title: Anti-Frizziness
+    - payload: Packaging
+      title: Packaging
+    - payload: Others
+      title: Others
+    text: What would you like us to improve on for your shampoo from Just Mine!
+  utter_q1_four_apo1:
+  - text: We are pleased that you liked your shampoo from Just Mine!
+  utter_q1_four_apo2:
+  - text: "But, we arent perfect yet."
+  utter_q1_four_b:
+  - buttons:
+    - payload: Fragrance
+      title: Fragrance
+    - payload: Colour
+      title: Colour
+    - payload: 'Effect of Ingredients '
+      title: 'Effect of Ingredients '
+    - payload: Cleansing properties
+      title: Cleansing properties
+    - payload: Conditioning
+      title: Conditioning
+    - payload: ' Foaming Quality '
+      title: ' Foaming Quality '
+    - payload: Moisturizing effects
+      title: Moisturizing effects
+    - payload: Anti-Frizziness
+      title: Anti-Frizziness
+    - payload: Packaging
+      title: Packaging
+    - payload: Extra Input
+      title: Extra Input
+    text: Did you like anything specifically in the shampoo? (You may select multiple options, if needed)
+  utter_q1_one_a:
+  - buttons:
+    - payload: Fragrance
+      title: Fragrance
+    - payload: Colour
+      title: Colour
+    - payload: 'Effect of Ingredients '
+      title: 'Effect of Ingredients '
+    - payload: Cleansing properties
+      title: Cleansing properties
+    - payload: Conditioning
+      title: Conditioning
+    - payload: ' Foaming Quality '
+      title: ' Foaming Quality '
+    - payload: Moisturizing effects
+      title: Moisturizing effects
+    - payload: Anti-Frizziness
+      title: Anti-Frizziness
+    - payload: Packaging
+      title: Packaging
+    - payload: Others
+      title: Others
+    text: We would like to know the reasons for your bad experience
+  utter_q1_one_apo1:
+  - text: We apologize for your bad experience!
+  utter_q1_one_apo2:
+  - text: That's not a standard that we have set for ourselves.
+  utter_q1_three_a:
+  - buttons:
+    - payload: Fragrance
+      title: Fragrance
+    - payload: Colour
+      title: Colour
+    - payload: 'Effect of Ingredients '
+      title: 'Effect of Ingredients '
+    - payload: Cleansing properties
+      title: Cleansing properties
+    - payload: Conditioning
+      title: Conditioning
+    - payload: ' Foaming Quality '
+      title: ' Foaming Quality '
+    - payload: Moisturizing effects
+      title: Moisturizing effects
+    - payload: Anti-Frizziness
+      title: Anti-Frizziness
+    - payload: Packaging
+      title: Packaging
+    - payload: Others
+      title: Others
+    text: We would like to know what are the areas you think we should work on to improve your experience
+  utter_q1_three_apo1:
+  - text: We apologize for the average experience you have had!
+  utter_q1_three_apo2:
+  - text: "That's not a standard that we have set for ourselves."
+  utter_q1_three_b:
+  - buttons:
+    - payload: Fragrance
+      title: Fragrance
+    - payload: Colour
+      title: Colour
+    - payload: 'Effect of Ingredients '
+      title: 'Effect of Ingredients '
+    - payload: Cleansing properties
+      title: Cleansing properties
+    - payload: Conditioning
+      title: Conditioning
+    - payload: ' Foaming Quality '
+      title: ' Foaming Quality '
+    - payload: Moisturizing effects
+      title: Moisturizing effects
+    - payload: Anti-Frizziness
+      title: Anti-Frizziness
+    - payload: Packaging
+      title: Packaging
+    - payload: Extra Input
+      title: Extra Input
+    text: Did you like anything specifically in the shampoo? (You may select multiple options, if need be)
+  utter_q1_two_a:
+  - buttons:
+    - payload: Fragrance
+      title: Fragrance
+    - payload: Colour
+      title: Colour
+    - payload: 'Effect of Ingredients '
+      title: 'Effect of Ingredients '
+    - payload: Cleansing properties
+      title: Cleansing properties
+    - payload: Conditioning
+      title: Conditioning
+    - payload: ' Foaming Quality '
+      title: ' Foaming Quality '
+    - payload: Moisturizing effects
+      title: Moisturizing effects
+    - payload: Anti-Frizziness
+      title: Anti-Frizziness
+    - payload: Packaging
+      title: Packaging
+    - payload: Others
+      title: Others
+    text: We would like to know what are the areas you think we should work on to improve your
+      experience.
+  utter_q1_two_apo1:
+  - text: We apologize for your below average experience!
+  utter_q1_two_apo2:
+  - text: That's not a standard that we have set for ourselves.
+  utter_q1_two_b:
+  - buttons:
+    - payload: Fragrance
+      title: Fragrance
+    - payload: Colour
+      title: Colour
+    - payload: 'Effect of Ingredients '
+      title: 'Effect of Ingredients '
+    - payload: Cleansing properties
+      title: Cleansing properties
+    - payload: Conditioning
+      title: Conditioning
+    - payload: ' Foaming Quality '
+      title: ' Foaming Quality '
+    - payload: Moisturizing effects
+      title: Moisturizing effects
+    - payload: Anti-Frizziness
+      title: Anti-Frizziness
+    - payload: Packaging
+      title: Packaging
+    - payload: Extra Input
+      title: Extra Input
+    text: Did you like anything specifically in the shampoo? (You may select multiple options,if needed)
+  utter_q2:
+  - buttons:
+    - payload: 5star
+      title: 5star
+    - payload: 4star
+      title: 4star
+    - payload: 3star
+      title: 3star
+    - payload: 2star
+      title: 2star
+    - payload: 1star
+      title: 1star
+    text: Did you love your ordering experience on www.just-mine.in?
+  utter_q2_five_a:
+  - buttons:
+    - payload: website design and flow
+      title: website design and flow
+    - payload: Intuitive response
+      title: Intuitive response
+    - payload: Questions for the survey
+      title: Questions for the survey
+    - payload: Helpful Descriptions
+      title: Helpful Descriptions
+    - payload: Additional Input
+      title: Additional Input
+    text: What did you like about Just Mine! that made you give us the Gold in the Olympics for shampoos?
+  utter_q2_five_apo1:
+  - text: We are delighted to know that we have been perfect for you!
+  utter_q2_five_apo2:
+  - text: This feels like winning the Gold in the Olympics for shampoos
+  utter_q2_four_a:
+  - buttons:
+    - payload: OTP process
+      title: OTP process
+    - payload: Website response
+      title: Website response
+    - payload: Questions for the survey
+      title: Questions for the survey
+    - payload: Hair problems descriptions
+      title: Hair problems descriptions
+    - payload: Fragrance descriptions
+      title: Fragrance descriptions
+    - payload: Additional Input
+      title: Additional Input
+    text: What would you like about Just Mine!, that won you over?
+  utter_q2_four_apo1:
+  - text: We are pleased that you enjoyed your ordering experience from Just Mine!
+  utter_q2_four_apo2:
+  - text: If we were to participate in the Olympics for shampoos, we would want to win nothing
+      but Gold
+  utter_q2_one_a:
+  - buttons:
+    - payload: OTP generation
+      title: OTP generation
+    - payload: Website response
+      title: Website response
+    - payload: 'Too many questions '
+      title: 'Too many questions '
+    - payload: Hair problems descriptions
+      title: Hair problems descriptions
+    - payload: Fragrance descriptions
+      title: Fragrance descriptions
+    - payload: Additional Input
+      title: Additional Input
+    text: To improve ourselves and serve you better,we would like to know the reason for your bad experience
+  utter_q2_one_apo1:
+  - text: We apologize for your bad experience!
+  utter_q2_one_apo2:
+  - text: If we were to participate in the Olympics for shampoos, we would want to win nothing but Gold
+  utter_q2_three_apo1:
+  - text: We apologize for the average experience you have had!
+  utter_q2_two_a:
+  - buttons:
+    - payload: OTP process
+      title: OTP process
+    - payload: Website response
+      title: Website response
+    - payload: Questions for the survey
+      title: Questions for the survey
+    - payload: Hair problems descriptions
+      title: Hair problems descriptions
+    - payload: Fragrance descriptions
+      title: Fragrance descriptions
+    - payload: Additional Input
+      title: Additional Input
+    text: To improve ourselves and serve you better,we would like to know the areas you think we should work on to ensure that your experience becomes unparalleled
+  utter_q2_two_apo1:
+  - text: We apologize for your below average experience!
+  utter_q2_two_apo2:
+  - text: If we were to participate in the Olympics for shampoos, we would want to win nothing but Gold
+  utter_q6:
+  - buttons:
+    - payload: Yes
+      title: Yes
+    - payload: No
+      title: No
+    text: Based on your usage experience, will you order for a shampoo from Just Mine! in the future?
+  utter_q7:
+  - buttons:
+    - payload: Yes
+      title: Yes
+    - payload: No
+      title: No
+    text: Will you be willing to buy your Just Mine! shampoo for Rs. 649?
+
+  utter_q2_three_a:
+  - buttons:
+    - payload: OTP process
+      title: OTP process
+    - payload: Website response
+      title: Website response
+    - payload: Questions for the survey
+      title: Questions for the survey
+    - payload: Hair problems descriptions
+      title: Hair problems descriptions
+    - payload: Fragrance descriptions
+      title: Fragrance descriptions
+    - payload: Additional Input
+      title: Additional Input
+    text: To improve ourselves and serve you better,we would like to know the areas you think we should work on to ensure that your experience becomes unparalleled
+  utter_q2_three_apo2:
+  - text: If we were to participate in the Olympics for shampoos, we would want to win nothing but Gold
+  utter_ask_opt:
+  - text: Is there anything that you want us to specifically work on to make your Just Mine!shampoo experience,the best one ever?
+  utter_ask_opt1:
+  - text: Which shampoo did you use before Just Mine!?
+  utter_ask_feedback3:
+  - text: Type a message
+  utter_ask_feedback5:
+  - text: Type a message
+  utter_ask_feedback4:
+  - text: Type a message
+  utter_slots_values:
+  - text: "Entered Text:\n - q3: {opt}\n - q4: {opt1}"
+  utter_slots_values3:
+  - text: "Entered Text:\n - feedback: {feedback3}"
+  utter_slots_values5:
+  - text: "Entered Text:\n - feedback: {feedback5}"
+  utter_slots_values4:
+  - text: "Entered Text:\n - feedback: {feedback4}"
+  utter_submit:
+  - text: All done!
+  utter_thankyou:
+  - text: Highly delighted to hear that!
+  utter_thankyou1:
+  - text: Thank you for your valuable feedback! We sincerely appreciate that you could spend your valuable time in helping make your Just Mine! shampoo, the best ever!
+
